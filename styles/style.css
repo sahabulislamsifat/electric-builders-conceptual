@@ -52,5 +52,75 @@ nav {
   max-width: 1280px;
   height: 400px;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 10px;
+  position: relative;
+}
+
+.image-section,
+.text-section {
+  width: 50%;
+  /* border: 2px solid yellow; */
+}
+
+.image-section img {
+  width: 85%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 2ch;
+}
+
+.fifty-off {
+  background-color: rgba(0, 0, 0, 0.352);
+  color: whitesmoke;
+  font-style: italic;
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: large;
+  font-weight: 400;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+}
+
+.text-section p {
+  color: gray;
+  margin: 20px auto;
+}
+
+.order-btn {
+  background-color: cadetblue;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  transition: all 1s;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.shop-btn {
+  margin-left: 6px;
+  background-color: gray;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  transition: all 1s;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
 }

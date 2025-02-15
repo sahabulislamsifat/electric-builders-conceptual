@@ -13,12 +13,38 @@
   .menu-icon {
     display: block;
   }
-  .btn {
+  .nav-btn {
     display: none;
   }
   .navbar-main {
     flex-direction: row;
     padding: 0 20px;
   }
-}
+  .banner-container {
+    flex-direction: column;
+    position: relative;
+  }
 
+  .image-section,
+  .text-section {
+    width: 98%;
+    text-align: center;
+  }
+
+  .image-section img {
+    width: 100%;
+  }
+
+  .fifty-off {
+    position: absolute;
+    left: 40%;
+  }
+  .text-section {
+    font-size: larger;
+  }
+  .order-btn,
+  .shop-btn {
+    font-size: large;
+    padding: 6px 20px;
+  }
+}
