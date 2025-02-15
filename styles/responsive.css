@@ -7,6 +7,10 @@
   .navbar-main div {
     margin-top: 10px;
   }
+  .popular-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -22,13 +26,16 @@
   }
   .banner-container {
     flex-direction: column;
-    position: relative;
   }
 
   .image-section,
   .text-section {
     width: 98%;
     text-align: center;
+  }
+
+  .image-section {
+    position: relative;
   }
 
   .image-section img {
@@ -47,4 +54,11 @@
     font-size: large;
     padding: 6px 20px;
   }
+  .popular-main {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+  }
+  /* .text-section {
+    display: none;
+  } */
 }

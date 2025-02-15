@@ -21,7 +21,6 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0lvw;
 }
 
 .navbar-main h1 {
@@ -57,13 +56,16 @@ nav {
   align-items: center;
   background-color: aliceblue;
   padding: 10px;
-  position: relative;
 }
 
-.image-section,
 .text-section {
-  width: 50%;
+  width: 100%;
   /* border: 2px solid yellow; */
+}
+
+.image-section {
+  width: 100%;
+  position: relative;
 }
 
 .image-section img {
@@ -84,12 +86,23 @@ nav {
   font-weight: 400;
   position: absolute;
   top: 40%;
-  left: 17%;
+  left: 34%;
 }
 
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text-section h1,
 .text-section p {
-  color: gray;
-  margin: 20px auto;
+  color: black; /* Ensure text is visible */
+  font-size: 20px;
+  padding: 10px;
 }
 
 .order-btn {
@@ -124,3 +137,43 @@ nav {
   border: 1px solid black;
   color: black;
 }
+
+/* Popular Collection Section  */
+.popular-main {
+  max-width: 1280px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+}
+
+.card {
+  max-width: 100%;
+  background-color: aliceblue;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 4px 4px 8px rgb(207, 202, 202);
+}
+
+.card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.ratings {
+  display: flex;
+  gap: 10px;
+  color: goldenrod;
+}
+
+.card-description {
+  color: gray;
+}
+
