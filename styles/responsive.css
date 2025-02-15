@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+  }
+  .navbar-main div {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .menu-icon {
+    display: block;
+  }
+  .btn {
+    display: none;
+  }
+  .navbar-main {
+    flex-direction: row;
+    padding: 0 20px;
+  }
+}
+
