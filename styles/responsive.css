@@ -76,14 +76,14 @@
     flex-direction: column;
     margin: auto 10px;
   }
-
-  /* Qustion and Answer Section  */
-  .qustion-and-answer-main {
-    width: 1280px;
-    margin: 0 auto;
-    border: 2px solid red;
+  .question-and-answer-title {
+    display: flex;
   }
-  .qustion-and-answer-title {
-    text-align: center;
+
+  .question-and-answer-container {
+    flex-direction: column;
+  }
+  .button button {
+    margin-top: 20px;
   }
 }
